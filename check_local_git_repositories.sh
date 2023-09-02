@@ -11,6 +11,6 @@ if [[ $(stat -c '%u' $1) -eq $UID ]] && [[ $(stat -c '%a' $1) -gt 400 ]]; then
     echo "Local git repositories are:"
     echo -ne $directories|nl
 else
-    echo "This location does not have right permissions ! You maybe need root permissions"
+    echo "This location does not have right permissions! You maybe need root permissions."
     exit
 fi
